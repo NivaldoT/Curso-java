@@ -16,7 +16,8 @@ public class Main {
         int mult = 10*10;
         int div = 10/3;
 
-        System.out.println(div);
+        int mod = 10%5; //RESTO DA DIVISÃO
+        //System.out.println(div);
 
         //BOOLEAN
         boolean maior = true;
@@ -50,6 +51,17 @@ public class Main {
         boolean diferente = 5!=10;
 
         System.out.println(!maiorQ);
+
+
+        //IF ELSE
+
+        int maiorDeIdade = 18;
+        int idadePessoa = 19;
+        if(idadePessoa>=maiorDeIdade){
+            System.out.println("Pode ir no Quinta Aula!");
+        }else{
+            System.out.println("Estude para o ENEM!");
+        }
 
     }
 }
