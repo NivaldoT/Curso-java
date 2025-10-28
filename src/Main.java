@@ -58,6 +58,7 @@ public class Main {
         int maiorDeIdade = 18;
         int idadePessoa = 19;
         if(idadePessoa>=maiorDeIdade){
+            System.out.println("Idade: "+idadePessoa);
             System.out.println("Pode ir no Quinta Aula!");
         }else{
             System.out.println("Estude para o ENEM!");
