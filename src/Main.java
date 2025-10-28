@@ -63,5 +63,25 @@ public class Main {
             System.out.println("Estude para o ENEM!");
         }
 
+        //LAÇOS
+        //;int count = 1;
+        //System.out.println("Vamos contar até 10:");
+        //while(count < 11){
+        //    System.out.println("contador = "+count);
+        //    count ++;
+        //}
+        //System.out.println("Vamos contar de 10 a 0:");
+        //for(count = 10; count >0;count--){
+        //    System.out.println("contador = "+count);
+        //}
+
+        //tabuada
+        System.out.println("Vamos Fazer a Tabuada do 0 ao 10:");
+        for(int n1=0; n1<11; n1++){
+            System.out.println("\nTabuada do: "+n1+"\n");
+            for(int n2=0;n2<11;n2++){
+                System.out.println(n1+"*"+n2+"="+n1*n2);
+            }
+        }
     }
 }
