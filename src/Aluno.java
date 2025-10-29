@@ -1,14 +1,16 @@
 public class Aluno {
-    String nome;
+    String nome, cpf;
     int idade;
-    String cpf;
     boolean formado;
+    double nota1, nota2;
 
-    public Aluno(String nome, String cpf, int idade, boolean formado){
+    public Aluno(String nome, String cpf, int idade, boolean formado, double nota1, double nota2){
         this.nome = nome;
         this.cpf = cpf;
         this.idade = idade;
         this.formado = formado;
+        this.nota1 = nota1;
+        this.nota2 = nota2;
     }
 
     void descrever(){
@@ -21,5 +23,8 @@ public class Aluno {
         else{
             System.out.println("O aluno: "+this.nome+" não é formado(a).");
         }
+    }
+    double media(){
+        return (nota1 + nota2)/2;
     }
 }
