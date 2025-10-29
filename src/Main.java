@@ -113,5 +113,12 @@ public class Main {
             somaMedias += alunos[j].media();
         }
         System.out.println("Média dos Alunos: "+ somaMedias /3);
+
+        ListaEncadeada listaEncadeada = new ListaEncadeada(1);
+        listaEncadeada.append(2);
+        listaEncadeada.append(3);
+        listaEncadeada.append(4);
+
+        listaEncadeada.printList();
     }
 }
