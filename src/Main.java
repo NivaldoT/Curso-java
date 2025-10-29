@@ -64,26 +64,43 @@ public class Main {
             System.out.println("Estude para o ENEM!");
         }
 
-        //LAÇOS
-        //;int count = 1;
-        //System.out.println("Vamos contar até 10:");
-        //while(count < 11){
-        //    System.out.println("contador = "+count);
-        //    count ++;
-        //}
-        //System.out.println("Vamos contar de 10 a 0:");
-        //for(count = 10; count >0;count--){
-        //    System.out.println("contador = "+count);
-        //}
+//        LAÇOS
+//        ;int count = 1;
+//        System.out.println("Vamos contar até 10:");
+//        while(count < 11){
+//            System.out.println("contador = "+count);
+//            count ++;
+//        }
+//        System.out.println("Vamos contar de 10 a 0:");
+//        for(count = 10; count >0;count--){
+//            System.out.println("contador = "+count);
+//        }
+//
+//        tabuada
+//        System.out.println("Vamos Fazer a Tabuada do 0 ao 10:");
+//        for(int n1=0; n1<11; n1++){
+//            System.out.println("Tabuada do: "+n1+"\n");
+//            for(int n2=0;n2<11;n2++){
+//                System.out.println(n1+"*"+n2+"="+n1*n2);
+//            }
+//            System.out.println("====================");
+//        }
 
-        //tabuada
-        System.out.println("Vamos Fazer a Tabuada do 0 ao 10:");
-        for(int n1=0; n1<11; n1++){
-            System.out.println("Tabuada do: "+n1+"\n");
-            for(int n2=0;n2<11;n2++){
-                System.out.println(n1+"*"+n2+"="+n1*n2);
-            }
-            System.out.println("====================");
-        }
+        System.out.println("\n\nClasses e objetos");
+        Aluno aluno = new Aluno("Nivaldo Targino","47837356896",22,false);
+        Aluno aluno2 = new Aluno("Monica silva","bananacas",50,true);
+//        aluno.nome = "Nivaldo Targino";
+//        aluno.cpf = "15616156";
+//        aluno.idade = 22;
+//        aluno.formado = false;
+        System.out.println("Nome: "+aluno.nome);
+        System.out.println("CPF: "+aluno.cpf);
+        System.out.println("Idade: "+aluno.idade);
+        System.out.println("Formado? "+aluno.formado);
+
+        aluno.isFormado();
+        aluno2.isFormado();
+        aluno.descrever();
+        aluno2.descrever();
     }
 }
