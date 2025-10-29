@@ -120,5 +120,6 @@ public class Main {
         listaEncadeada.append(4);
 
         listaEncadeada.printList();
+        System.out.println("aasda");
     }
 }
