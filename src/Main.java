@@ -119,6 +119,7 @@ public class Main {
         listaEncadeada.append(2);
         listaEncadeada.append(3);
         listaEncadeada.append(4);
+        listaEncadeada.append(5);
 
         listaEncadeada.printList();
         System.out.println("Ultimo elemento removido.");
@@ -132,5 +133,25 @@ public class Main {
         listaEncadeada.printList();
         System.out.println("Buscando 2 elemento da lista.");
         System.out.println(listaEncadeada.get(2).value);
+        System.out.println("Inserindo valor 1000 no index 2.");
+        listaEncadeada.insert(2,1000);
+        listaEncadeada.printList();
+
+        System.out.println("Buscando elemento do meio da lista com Algoritmo slow fast: "+listaEncadeada.findMiddleNode().value);
+
+        Pilha pilha = new Pilha('a');
+        System.out.println("Criando Pilha com: baixo a,b,c topo");
+        pilha.push('b');
+        pilha.push('c');
+        pilha.printPilha();
+        System.out.println("Removendo um elemento do topo:");
+        pilha.pop();
+        pilha.pop();
+        pilha.pop();
+        pilha.printPilha();
+        System.out.println("Revertendo uma String Com Pilha: UNOESTE");
+        pilha.revertString("UNOESTE");
+
+
     }
 }

@@ -104,4 +104,31 @@ public class ListaEncadeada {
         }
     }
 
+    public boolean insert(int index, int value){
+        if(index ==0){
+            this.prepend(value);
+            return true;
+        }
+        if(index == length){
+            this.append(value);
+            return true;
+        }
+        Node newNode = new Node(value);
+        Node temp = get(index -1);
+        newNode.next = temp.next;
+        temp.next = newNode;
+        length++;
+        return true;
+    }
+    public Node findMiddleNode(){
+        Node slow;
+        Node fast;
+        slow = fast = head;
+        while(fast != null && fast.next!=null){
+            slow = slow.next;
+            Node aux = fast.next;
+            fast = aux.next;
+        }
+        return slow;
+    }
 }
