@@ -41,4 +41,67 @@ public class ListaEncadeada {
             temp = temp.next;
         }
     }
+    Node removeLast(){
+        if(length == 0){
+            System.out.println("Lista vazia, impossível remover elemento.");
+            return null;
+        } else {
+            Node temp = head;
+            Node prev = head;
+            while(temp.next != null){
+                prev = temp;
+                temp = temp.next;
+            }
+            prev.next = null;
+            tail = prev;
+            length--;
+
+            return prev;
+        }
+    }
+
+    void prepend(int value){
+        Node newNode = new Node(value);
+        if(length == 0){
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.next = head;
+            head = newNode;
+            length++;
+        }
+    }
+//    Node removeFirst(){
+//        Node segundo = head.next;
+//        Node headValor = head;
+//        head = segundo;
+//        length--;
+//        return headValor;
+//    }
+    Node removeFirst(){
+        if(length == 0){
+            return null;
+        } else {
+            Node temp = head;
+
+            head = head.next;
+            temp.next = null;
+            length--;
+            return temp;
+        }
+    }
+    Node get(int index){
+        Node temp = head;
+        if(index <0 || index >= length){
+            return null;
+        } else {
+            int count = 0;
+            while(count < index){
+                temp = temp.next;
+                count++;
+            }
+            return temp;
+        }
+    }
+
 }

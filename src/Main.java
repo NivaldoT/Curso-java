@@ -114,12 +114,23 @@ public class Main {
         }
         System.out.println("Média dos Alunos: "+ somaMedias /3);
 
+        System.out.println("Lista Encadeada:");
         ListaEncadeada listaEncadeada = new ListaEncadeada(1);
         listaEncadeada.append(2);
         listaEncadeada.append(3);
         listaEncadeada.append(4);
 
         listaEncadeada.printList();
-        System.out.println("aasda");
+        System.out.println("Ultimo elemento removido.");
+        listaEncadeada.removeLast();
+        listaEncadeada.printList();
+        System.out.println("Adicionando elemento no começo.");
+        listaEncadeada.prepend(50);
+        listaEncadeada.printList();
+        System.out.println("Removendo primeiro elemento.");
+        listaEncadeada.removeFirst();
+        listaEncadeada.printList();
+        System.out.println("Buscando 2 elemento da lista.");
+        System.out.println(listaEncadeada.get(2).value);
     }
 }
